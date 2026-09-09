@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class EnkelSikkerhet {
 
     public static void main(String[] args) {
@@ -8,6 +6,7 @@ public class EnkelSikkerhet {
         System.out.print("Skriv inn et passord: ");
         String passord = scanner.nextLine();
 
+        while 
         if (passord.length() < 8) {
             System.out.println("For kort! Bruk minst 8 tegn.");
         } else if (!passord.matches(".*[0-9].*")) {
@@ -17,7 +16,7 @@ public class EnkelSikkerhet {
         } else {
             System.out.println("Passordet ser greit ut!");
         }
-
+      
         scanner.close();
     }
 }
